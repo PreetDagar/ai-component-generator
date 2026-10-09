@@ -1,0 +1,49 @@
+/* Reset */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+/* Variables */
+:root {
+--primary-bg: #090908;
+--secondary-bg: #111827; /* ✅ FIXED (added) */
+--text-color: #ffffff;
+}
+/* Global */
+html, body {
+overflow-x: hidden;
+background-color: var(--primary-bg);
+color: var(--text-color);
+font-family: Arial, sans-serif;
+}
+/* Gradient Text */
+.sp-text {
+display: inline-block;
+background-image: conic-gradient(at top, #818cf8, #6366f1);
+background-clip: text;
+-webkit-background-clip: text;
+color: transparent;
+}
+/* Icon Styling */
+.icon {
+padding: 12px;
+font-size: 20px;
+border: 1px solid #1f2937;
+border-radius: 10px;
+background-color: var(--secondary-bg);
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+/* Icon color */
+.icon svg {
+color: white;
+}
+/* Hover effect 🔥 */
+.icon:hover {
+background-color: #1f2937;
+transform: scale(1.05);
+transition: all 0.2s ease;
+}
